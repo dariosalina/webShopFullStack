@@ -22,16 +22,16 @@ export default class Adverts extends BaseEntity {
   @Column('text')
   picture: string
 
-  @IsString()
+  
   @Column()
-  price: string
+  price: number
 
   @IsEmail()
   @Column('text')
   email: string
 
-  @IsString()
+  
   @Column()
-  phone_number: string
+  phone_number: number
 
 }

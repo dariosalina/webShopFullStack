@@ -14,9 +14,9 @@ class CreateAdvertContainer extends React.Component {
 
   };
 
-  onChange = event => {
+  onChange = advert => {
     this.setState({
-      [event.target.name]: event.target.value
+      [advert.target.name]: advert.target.value
     });
   };
 
