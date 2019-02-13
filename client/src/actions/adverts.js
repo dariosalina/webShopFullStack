@@ -33,3 +33,23 @@ export const loadAdvert = (id) => (dispatch) => {
     })
     .catch(console.error)
 }
+
+
+export const ADVERT_CREATE = 'ADVERT_CREATE'
+
+
+
+const createAdvertSuccess = advert => ({
+  type: ADVERT_CREATE,
+  advert
+})
+
+export const createAdvert = (data) => dispatch => {
+  request
+    .post(`http://localhost:4000/adverts`)
+    .send(data)
+    .then(response => {
+      dispatch(createAdvertSuccess(response.body))
+    })
+    .catch(console.error)
+}

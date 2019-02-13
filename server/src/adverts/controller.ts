@@ -1,11 +1,11 @@
 import {
   JsonController,
-  // Post,
-  // HttpCode,
+  Post,
+  HttpCode,
   Get,
-  // Body,
-  Param
-} from "routing-controllers";
+  Body,
+  Param,
+  } from "routing-controllers";
 
 import Adverts from "./entity";
 
@@ -16,12 +16,18 @@ export default class AdvertsController {
     return Adverts.findOne(id);
   }
 
-  
   @Get("/home")
   async allAdverts() {
     const adverts = await Adverts.find();
     return { adverts };
   }
 
+  @Post('/adverts')
+  @HttpCode(201)
+  createPage(
+    @Body() advert: Adverts
+  ) {
+    return advert.save()
+  }
 
 }
