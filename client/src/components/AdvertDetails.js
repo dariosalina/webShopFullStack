@@ -11,7 +11,7 @@ export default function AdvertDetails(props) {
           <span>
             <h1>{advert.title}</h1>
             <p>{advert.price}</p>
-            <img alt={advert.description}>{advert.picture}</img>
+            <img src={advert.picture} alt={advert.title}/>
             <p>{advert.description}</p>
             <p>{advert.phone_number}</p>
             <p>{advert.email}</p>

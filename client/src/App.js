@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div>
-          <Route path="/" exact component={AdvertsListContainer} />
+          <Route path="/home" exact component={AdvertsListContainer} />
           <Route path="/adverts/:id" component={AdvertDetailsContainer} />
         </div>
       </Provider>
