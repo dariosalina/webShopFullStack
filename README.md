@@ -1,6 +1,4 @@
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1c7d7eac-27e6-402f-987b-fe2425e5d3e4/deploy-status)](https://app.netlify.com/sites/bakeka/deploys)
-
 # Bakeka 
 ## [Check out the deployed version here!-Under maintenance at the moment!!](https://bakeka.netlify.com)
 ## What this project is about
