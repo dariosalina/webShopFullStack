@@ -13,7 +13,6 @@ This is my first own fullstack app built from scratch during the 7th week at the
 - **[Goals for this project](#goals-for-this-project)**
 - **[Commits history](#commits-history)**
 - **[My git workflow](#my-git-workflow)**
-- **[My agile workflow and trello board](#my-agile-workflow-and-trello-board)**
 - **[create-react-app-docs](#create-react-app)**
 
 ## Technologies used
