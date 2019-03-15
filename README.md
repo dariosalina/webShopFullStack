@@ -11,7 +11,7 @@ This is my first own fullstack app built from scratch during the 7th week at the
 
 - **[Technologies used](#technologies-used)**
 - **[Goals for this project](#goals-for-this-project)**
-- **[Features built so far overview with pull requests](#features-built-so-far-overview-with-pull-requests)**
+- **[Commits history](#commits-history)**
 - **[My git workflow](#my-git-workflow)**
 - **[My agile workflow and trello board](#my-agile-workflow-and-trello-board)**
 - **[create-react-app-docs](#create-react-app)**
@@ -20,9 +20,9 @@ This is my first own fullstack app built from scratch during the 7th week at the
 
 #### 👀👇 Click links to view some samples in this project 👇👀
 
-- **[react](./src/containers/Game.js)**  
-- **[redux](./src/reducers/question.js)** 
-- [typescript]
+- **[react](./src/App.js)**  
+- **[redux](.src/reducers/adverts.js)** 
+- **[typescript](./src/index.ts)**
 
 
 ## Goals for this project:
@@ -31,34 +31,20 @@ This is my first own fullstack app built from scratch during the 7th week at the
 -Build features with the technologies learnt during the academy 
 
 
-## Features built so far overview with pull requests
+## Commits history
 
-#### 👀👇 Click links to view the pull requests 👇👀
+#### 👀👇 Click links to view the list of commits 👇👀
 
-- **[Feat/display random dog image](https://github.com/Reinoptland/dog-quiz/pull/2)**
-- **[Feat/next question](https://github.com/Reinoptland/dog-quiz/pull/5)**
-- **[Feat/feedback on incorrect](https://github.com/Reinoptland/dog-quiz/pull/7)**
-- **[Bugfix/disable buttons on choice](https://github.com/Reinoptland/dog-quiz/pull/11)**
+- **[List of commits](https://github.com/dariosalina/webShopFullStack/commits/master)**
 
 ## My git workflow
 
 In this project I try to use:
 
 - Good commit messages
-- Well named branches
-- Pull requests with summaries
 
 If you have feedback to improve my git usage: **[please drop me a line!](https://www.linkedin.com/in/rein-op-t-land-295759124/)** 
 
-Here is my branching model for this project.
-
-```
-master (auto deploys) ______________________
-                       \               /
-development             \_____________/- pull request
-                         \           /
-feature/some-feature      \_commits_/- pull request
-```
 
 ## Create React App
 
