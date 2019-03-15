@@ -40,7 +40,7 @@ In this project I try to use:
 
 - Good commit messages
 
-If you have feedback to improve my git usage: **[please drop me a line!](https://www.linkedin.com/in/rein-op-t-land-295759124/)** 
+If you have feedback to improve my git usage: **[please drop me a line!](TBD)** 
 
 
 ## Create React App
