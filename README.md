@@ -19,9 +19,9 @@ This is my first own fullstack app built from scratch during the 7th week at the
 
 #### 👀👇 Click links to view some samples in this project 👇👀
 
-- **[react](./src/App.js)**  
-- **[redux](.src/reducers/adverts.js)** 
-- **[typescript](./src/index.ts)**
+- **[react](./client/src/App.js)**  
+- **[redux](./client/src/reducers/adverts.js)** 
+- **[typescript](./server/src/index.ts)**
 
 
 ## Goals for this project:
