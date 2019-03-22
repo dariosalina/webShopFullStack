@@ -4,30 +4,27 @@ import {
   HttpCode,
   Get,
   Body,
-  Param,
-  } from "routing-controllers";
+  Param
+} from "routing-controllers";
 
-import Adverts from "./entity";
+import Advert from "./entity";
 
 @JsonController()
 export default class AdvertsController {
   @Get("/adverts/:id")
   getAdvert(@Param("id") id: number) {
-    return Adverts.findOne(id);
+    return Advert.findOne(id);
   }
 
-  @Get("/home")
+  @Get("/adverts")
   async allAdverts() {
-    const adverts = await Adverts.find();
+    const adverts = await Advert.find();
     return { adverts };
   }
 
-  @Post('/adverts')
+  @Post("/adverts")
   @HttpCode(201)
-  createPage(
-    @Body() advert: Adverts
-  ) {
-    return advert.save()
+  createPage(@Body() advert: Advert) {
+    return advert.save();
   }
-
 }

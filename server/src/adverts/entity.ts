@@ -1,37 +1,36 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
-import { BaseEntity } from 'typeorm/repository/BaseEntity'
-import { IsString, Length, MinLength, IsEmail,} from 'class-validator'
-
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
+import { BaseEntity } from "typeorm/repository/BaseEntity";
+import { IsString, IsEmail } from "class-validator";
+import User from "../users/entity";
 @Entity()
-export default class Adverts extends BaseEntity {
-
+export default class Advert extends BaseEntity {
   @PrimaryGeneratedColumn()
-  id?: number
+  id?: number;
 
   @IsString()
-  @Length(5, 25)
-  @Column('text')
-  title: string
+  // @Length(5, 25)
+  @Column("text")
+  title: string;
 
   @IsString()
-  @MinLength(10)
-  @Column('text')
-  description: string
+  // @MinLength(10)
+  @Column("text")
+  description: string;
 
   @IsString()
-  @Column('text')
-  picture: string
+  @Column("text")
+  picture: string;
 
-  
-  @Column()
-  price: number
+  @Column("integer")
+  price: number;
 
   @IsEmail()
-  @Column('text')
-  email: string
+  @Column("text")
+  email: string;
 
-  
   @Column()
-  phone_number: number
+  phone_number: number;
 
+  @ManyToOne(_ => User, user => user.adverts, { eager: true })
+  user: User;
 }
