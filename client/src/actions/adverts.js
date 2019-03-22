@@ -17,7 +17,7 @@ export const loadAdverts = () => (dispatch) => {
   //this to check if there are adverts already fetched
 //   if (getState().adverts) return;
 
-  request(`http://localhost:4000/home`)
+  request(`http://localhost:4000/adverts`)
     .then(response => {
       dispatch(advertsFetched(response.body.adverts));
       
