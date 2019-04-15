@@ -14,10 +14,8 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div class="pa3 pa4-ns">
-          <h1 class="link dim black b f1 f-headline-ns tc db mb3 mb4-ns">
-            Bakeka
-          </h1>
+        <div className="">
+          <h1 className="">Bakeka</h1>
           <Route path="/" component={Home} />
           <Route path="/signup" component={SignUpPage} />
           <Route exact path="/logout" component={LogOut} />
