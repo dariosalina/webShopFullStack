@@ -1,21 +1,22 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 export default function Home(props) {
   return (
-    <nav className="">
-      <div className="" href="#" title="Home">
+    <nav className="nav">
+      <div className="btn btn--white" href="#" title="Home">
         <Link to={`/signup`}>SignUp</Link>
       </div>
-      <div className="" href="#" title="Home">
+      <div className="btn btn--white" href="#" title="Home">
         {" "}
         <Link to={`/login`}>Login</Link>
       </div>
-      <div className="" href="#" title="About">
+      <div className="btn btn--white" href="#" title="About">
         <Link to={`/adverts`}>Adverts</Link>
       </div>
-      <div className="" href="#" title="Store">
+      <div className="btn btn--white" href="#" title="Store">
         <Link to={`/logout`}>LogOut</Link>
       </div>
     </nav>

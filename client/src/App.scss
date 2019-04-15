@@ -1,0 +1,121 @@
+$color-primary: rgba(179, 240, 252, 0.795);
+$color-secondary: rgba(86, 162, 255, 0.808);
+$color-transparent: rgba(255, 255, 255, 0.973);
+$color-text-dark: #333;
+$color-text-light: #fff;
+$button-width: 25%;
+
+@mixin style-link-text($col) {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $col;
+}
+
+.header {
+  height: 50vh;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary,
+      $color-secondary
+    ),
+    url(../src/img/clem-onojeghuo-173534-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 10vh, 100% 0, 100% 40vh, 0 100%);
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary--main {
+  color: $color-text-light;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+
+  animation-name: moveinleft;
+  animation-duration: 3s;
+
+  animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+  color: $color-text-light;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.75rem;
+
+  // animation-name: moveinright;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// nav {
+//   margin: 30px;
+
+//   &::after {
+//     content: "";
+//     clear: both;
+//     display: table;
+//   }
+// }
+
+.navigation {
+  list-style: none;
+  float: left;
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    &:first-child {
+      margin: 0px;
+    }
+  }
+}
+
+.btn-main:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  width: $button-width;
+
+  @include style-link-text($color-text-light);
+}
+
+.btn-main {
+  &:link {
+    background-color: $color-primary;
+  }
+
+  &:hover {
+    background-color: darken($color-transparent, 20%);
+  }
+}
